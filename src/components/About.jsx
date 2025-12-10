@@ -1,67 +1,93 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
+// import icon from "react-icons/fa";
+import { aboutInfo, assets } from "../assets/assets.js";
 
 const About = () => {
   return (
-    <div>
-      {/* <motion.div
-              
-                      initial={{opacity:4, y:50}}
-                      WhileInView={{opacity:1, y:0}}
-                      transition={{duration:0.6, ease:'easeOut'}}
-                      viewport={{once: true}}
-                      id='about'
-                      className='py-20 bg-linear-to-r from-[#0da37b] via-[#464545] to-[#0da37b]'
-                      >
-                          <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between'>
-                            {/* Left Side */}
-                              {/* <div className='container mx-0 px-6 text-center'>
-                                  <h1 className='text-4xl font-bold text-white mb-4 mt-4'>About <span className='text-amber-500 font-semibold'>Me</span>
-                                  </h1>
-                                  <p className='text-xl'>Get to know more about my background and passion</p>
-                                  </div>
-                    </div>
-                   </motion.div> */} 
-                  
-           <motion.div
-                   initial={{opacity:4, y:50}}
-                   WhileInView={{opacity:1, y:0}}
-                   transition={{duration:0.6, ease:'easeOut'}}
-                   viewport={{once: true}}
-                   id='about'
-                  className='py-20 bg-linear-to-r from-[#0da37b] via-[#464545] to-[#0da37b]'
-                      >
-                          <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between'>
-                            {/* Left Side */}
-                            <div className='container mx-0 px-6 text-center'>
-                                  <h1 className='text-4xl font-bold text-white mb-4 mt-4'>About <span className='text-amber-500 font-semibold'>Me</span>
-                                  </h1>
-                               
-                               <p className='text-lg text-gray-300 mb-8'>Get to know more about my background and passion</p>
-                               
-                           </div>
-           
-                        {/* Right Side */}
-                       {/* <div className='md:w-1/2 flex justify-center'>
-                             <div className='relative w-64 h-64 md:w-80 md:h-80'>
-                                   <div className='absolute inset-0 rounded-full bg-linear-to-r from-[#064E3B] to-[#464545] opacity-70'>
-                                   <motion.img
-                                    animate={{ y: [0, -20, 0] }}
-                                    transition={{duration: 4,
-                                     repeat: Infinity,
-                                     repeatType: 'loop',
-                                     ease: 'easeInOut'
-                                    }}         
-                                   className='relative rounded-full w-64 h-64  border-amber-500 border-2  md:w-80 md:h-80 object-cover z-10 animate-float'
-                                   src={'/src/assets/maria.jpeg'} alt="profile" />
-                                   </div>
-                             </div>
-                       </div>  */}
-                 </div>
-                </motion.div>   
-                    
-           </div>
-  )
-}
+    <motion.div
+      initial={{ opacity: 4, y: 50 }}
+      WhileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
+      id="about"
+      className="py-20 bg-linear-to-r from-[#0da37b] via-[#464545] to-[#0da37b]"
+    >
+      <div className="container mx-10 px-6">
+        {/* Heading */}
 
-export default About
+        <h2 className="text-center text-4xl font-bold text-white mb-4">
+          About <span className="text-amber-500">Me</span>
+        </h2>
+
+        <p className="text-gray-300 text-center max-w-2xl mx-auto mb-2 text-xl">
+          Get to know more about my background and passion
+        </p>
+
+        {/* image=+journey*/}
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* image here */}
+          <div className="md:w-1/2 rounded-2xl overflow-hidden">
+            <motion.img
+              initial={{ opacity: 1, y: 50 }}
+              WhileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.2 }}
+              className="w-full h-full object-cover"
+              src={"src/assets/maria.jpeg"}
+              alt="Profile"
+            />
+          </div>
+          {/* text here */}
+          <motion.div
+            initial={{ opacity: 1, y: 50 }}
+            WhileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+            className="md:w-1/2"
+          >
+            <div className="rounded-2xl p-4">
+              <h3 className="text-gray-300 font-bold text-2xl mb-6">
+                My Journey
+              </h3>
+              <p className="text-gray-300 mb-6">
+                I'm a passionate full-stack developer with over couple of years of
+                experience creating digital solutions for businesses around the
+                world. My journey started with basic HTML/CSS websites and has
+                evolved into building complex web applications with modern
+                frameworks.
+              </p>
+              <p className="text-gray-300 mb-6">
+                When I'm not coding, you can find me exploring new technologies,
+                contributing to open-source projects, or sharing my knowledge
+                through tech blogs and tutorials. I believe in continuous
+                learning and pushing the boundaries of what's possible on the
+                web.
+              </p>
+              {/* cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {aboutInfo.map((data, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-800 rounded-2xl transition duration-300 p-6 shadow-2xl hover:-translate-y-2 hover:shadow-amber-500
+                        cursor-pointer"
+                  >
+                    <div>
+                      <data.icon className="text-amber-500 text-3xl mb-4" />
+                    </div>
+                    <h4 className="text-gray-300 font-semibold text-xl mb-2">
+                      {data.title}
+                    </h4>
+                    <p className="text-gray-300">{data.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default About;

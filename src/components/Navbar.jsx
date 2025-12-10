@@ -77,20 +77,20 @@ const [showmenu, setshowmenu] = useState(false)
                           <span>Home</span>
                           </a>
 
-                          <a onClick= {()=>setshowmenu(!showmenu)} href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
-                          <span>Home</span>
+                          <a onClick= {()=>setshowmenu(!showmenu)} href="#about" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+                          <span>About</span>
                           </a>
 
-                          <a onClick= {()=>setshowmenu(!showmenu)} href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
-                          <span>Home</span>
+                          <a onClick= {()=>setshowmenu(!showmenu)} href="#skills" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+                          <span>Skills</span>
                           </a>
 
-                          <a onClick= {()=>setshowmenu(!showmenu)} href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
-                          <span>Home</span>
+                          <a onClick= {()=>setshowmenu(!showmenu)} href="#projects" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+                          <span>Projects</span>
                           </a>
 
-                          <a onClick= {()=>setshowmenu(!showmenu)} href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
-                          <span>Home</span>
+                          <a onClick= {()=>setshowmenu(!showmenu)} href="#contact" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+                          <span>Contact</span>
                           </a>
 
           

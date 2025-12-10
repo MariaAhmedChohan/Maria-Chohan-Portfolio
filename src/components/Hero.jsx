@@ -8,7 +8,7 @@ const Hero = () => {
         initial={{opacity:4, y:50}}
         WhileInView={{opacity:1, y:0}}
         transition={{duration:0.6, ease:'easeOut'}}
-        viewport={{once: true}}
+        viewport={{once: false, amount:0.2}}
         id='home'
         className='min-h-screen items-center flex pt-20 pb-16 bg-linear-to-r from-[#064E3B] via-[#464545] to-[#064E3B]'
         >
@@ -20,8 +20,8 @@ const Hero = () => {
                     <h2 className='text-5xl md:4xl font:bold mb-4 typewriter'>Full Stack Developer</h2>
                     <p className='text-lg text-gray-300 mb-8'>I create stunning web Experiences with modern technologies and innovative design</p>
                     <div className='flex space-x-4'>
-                      <a href="#projects" className='px-6 py-3 bg-amber-600 rounded-lg font-medium bor shadow-lg hover:bg-amber-400 transition duration-300'>View Work</a>
-                      <a href="#contact" className='px-6 py-3 border-2 border-amber-600 rounded-lg font-medium shadow-lg  hover:bg-amber-400 transition decoration-amber-300'>Contact me</a>
+                      <a href="#projects" className='px-6 py-3 bg-amber-600 rounded-lg font-medium bor shadow-lg hover:bg-amber-500 transition duration-300'>View Work</a>
+                      <a href="#contact" className='px-6 py-3 border-2 border-amber-600 rounded-lg font-medium shadow-lg  hover:bg-amber-500 transition decoration-amber-300'>Contact me</a>
                     </div>
                 </div>
 
