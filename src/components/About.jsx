@@ -34,7 +34,7 @@ const About = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="w-full h-full object-cover"
               src={"src/assets/maria.jpeg"}
-              alt="Profile"
+              alt="MariaProfile"
             />
           </div>
           {/* text here */}
