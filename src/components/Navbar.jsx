@@ -14,9 +14,10 @@ const [showmenu, setshowmenu] = useState(false)
           <a href="#" className='text-4xl font-bold text-white'>
             Maria 
             <span className='text-amber-500'>Chohan</span>
+           
             </a> 
        </div>
-       <div className='hidden md:flex space-x-10'>
+       <div className='hidden md:flex space-x-10 mx-1'>
 
         <a href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
           <span>Home</span>
@@ -42,37 +43,32 @@ const [showmenu, setshowmenu] = useState(false)
           <span>Contact</span>
           <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full'></span>
         </a>
+
+        
         
        </div>
-     
        {/* Mobile view */}
          
-     <div className='md:hidden text-amber-500 font-bold text-2xl'>
+     <div className='md:hidden text-amber-500 font-bold '>
       {
         showmenu?
         
-        <FaXmark 
-        onClick= {()=>setshowmenu(!showmenu)}
-        className='cursor-pointer'/>:
+        <FaXmark  onClick= {()=>setshowmenu(!showmenu)}
+        className='text-2xl cursor-pointer'/>:
         <FaBars onClick= {()=>setshowmenu(!showmenu)}
-        className='cursor-pointer'/>
+        className='text-2xl cursor-pointer'/>
       }
 
-      
-      
-      
-      
-      
-      
-                     
-                     
-               </div>       
+      </div>     
+      </div>
+     
+         
 
-                 </div> 
+        
 {/* Mobile menu */}
                  {
         showmenu && (
-              <div className='md:hidden mt-4 bg-emerald-900 h-screen rounded-lg p-4 flex flex-col space-y-4 justify-center items-center'>
+              <div className='md:hidden bg-emerald-900 h-screen rounded-lg flex flex-col   items-center py-30 space-y-4 mt-4'>
                           <a onClick= {()=>setshowmenu(!showmenu)} href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
                           <span>Home</span>
                           </a>

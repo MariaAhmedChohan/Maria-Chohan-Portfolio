@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-// import { assets } from '../assets/assets'
 
 const Hero = () => {
   return (
@@ -17,7 +16,7 @@ const Hero = () => {
                 <div className='md:1/2 mb-10 md:mb-0'>
                     <h1 className='text-4xl md:text-6xl font bold mb-4'>Hi! I'am <span className='text-amber-500 font-semibold'>MariaChohan</span>
                     </h1>
-                    <h2 className='text-5xl md:4xl font:bold mb-4 typewriter'>Full Stack Developer</h2>
+                    <h2 className='text-4xl md:text-6xl font:bold mb-4 typewriter'>Full Stack Developer</h2>
                     <p className='text-lg text-gray-300 mb-8'>I create stunning web Experiences with modern technologies and innovative design</p>
                     <div className='flex space-x-4'>
                       <a href="#projects" className='px-6 py-3 bg-amber-600 rounded-lg font-medium bor shadow-lg hover:bg-amber-500 transition duration-300'>View Work</a>
@@ -28,7 +27,7 @@ const Hero = () => {
              {/* Right Side */}
             <div className='md:w-1/2 flex justify-center'>
                   <div className='relative w-64 h-64 md:w-80 md:h-80'>
-                        <div className='absolute inset-0 rounded-full bg-linear-to-r from-[#064E3B] to-[#464545] opacity-70'>
+                        <div className='absolute inset-0 rounded-full bg-linear-to-r from-[#064E3B] to-[#464545] opacity-70 mt-10'>
                         <motion.img
                          animate={{ y: [0, -20, 0] }}
                          transition={{duration: 4,

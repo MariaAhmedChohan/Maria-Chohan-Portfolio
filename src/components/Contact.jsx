@@ -1,5 +1,3 @@
-// import React from "react";
-// import keys from "./config.js";
 import { motion } from "framer-motion";
 import { aboutInfo, assets } from "../assets/assets.js";
 import {
@@ -57,7 +55,7 @@ const Contact = () => {
       id="contact"
       className="py-20 bg-linear-to-r from-[#0da37b] via-[#464545] to-[#0da37b]"
     >
-      <div className="container mx-10 px-6 ">
+      <div className="container mx-1 px-6">
         {/* Heading */}
 
         <h2 className="text-center text-4xl font-bold text-white mb-4">
@@ -200,6 +198,10 @@ const Contact = () => {
               </a>
 
             </div>
+
+        
+               
+            
             </div>
             </div>
             </div>

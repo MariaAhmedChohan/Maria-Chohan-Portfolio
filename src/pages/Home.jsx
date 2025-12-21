@@ -5,6 +5,7 @@ import Skills from '../components/Skills.jsx'
 import Projects from '../components/Projects.jsx'
 import Contact from '../components/Contact.jsx'
 
+
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
       <Skills/>
       <Projects/>
       <Contact/>
+     
     </div>
   )
 }
