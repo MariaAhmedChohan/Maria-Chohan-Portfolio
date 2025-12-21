@@ -23,7 +23,7 @@ const Skills = () => {
           Technologies I work with to bring ideas to life
         </p>
 
-        {/* cards */}
+        {/* dummy cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto ">
           {skills.map((skill, index) => (
             <div

@@ -108,7 +108,7 @@ export const projects = [
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio to showcase projects, skills, and contact to me !.",
+    description: "A personal portfolio to showcase projects, skills, and contact to me !.It is Responsive and built with modern web technologies.",
     image: projectImg4,
     tech: ["vite", "React.js", "Tailwind CSS", "React icons", "Framer Motion" ],
     icons: [FaReact, FaCloud],
