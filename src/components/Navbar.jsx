@@ -11,7 +11,7 @@ const [showmenu, setshowmenu] = useState(false)
     <nav className='fixed w-full z-50 bg-emerald-950 backdrop-blur-sm py-4 px-8 shadow-lg '>
       <div className='container mx-auto flex justify-between items-center'>
         <div>
-          <a href="#home" className='text-4xl font-bold text-white'>
+          <a href="home" className='text-4xl font-bold text-white'>
             Maria 
             <span className='text-amber-500'>Chohan</span>
            
