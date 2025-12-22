@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { assets } from '../assets/assets'
+
 
 const Hero = () => {
   return (
@@ -36,7 +38,7 @@ const Hero = () => {
                           ease: 'easeInOut'
                          }}         
                         className='relative rounded-full w-64 h-64  border-amber-500 border-2  md:w-80 md:h-80 object-cover z-10 animate-float'
-                        src={'/src/assets/maria.jpeg'} alt="profile" />
+                        src={assets.profileImg} alt="profile" />
                         </div>
                   </div>
             </div> 
