@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { skills, assets } from "../assets/assets.js";
+import { skills, assets } from "../asets/assets.js";
 
 const Skills = () => {
   return (

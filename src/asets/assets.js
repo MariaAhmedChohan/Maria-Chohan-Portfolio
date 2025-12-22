@@ -1,12 +1,12 @@
 import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaMobileAlt, FaTools, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
 
-import profileImg from '../assets/maria.jpeg';
-import projectImg1 from '../assets/project1.avif';
-import projectImg2 from '../assets/project2.avif';
-import projectImg3 from '../assets/project3.avif';
-import projectImg4 from '../assets/portfolio-Website.png';
-import projectImg5 from '../assets/CV-Front-View.png';
-import projectImg6 from '../assets/project6.png';
+import profileImg from './maria.jpeg';
+import projectImg1 from './project1.avif';
+import projectImg2 from './project2.avif';
+import projectImg3 from './project3.avif';
+import projectImg4 from './portfolio-Website.png';
+import projectImg5 from './CV-Front-View.png';
+import projectImg6 from './project6.png';
 
 
 export const assets = {
