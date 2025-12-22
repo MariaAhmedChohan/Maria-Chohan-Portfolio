@@ -4,11 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter, HashRouter } from 'react-router-dom'
 
+// GitHub is not supporting BrowserRouter for pages hosted on gh-pages.
 createRoot(document.getElementById('root')).render(
-    <HashRouter base="/Maria-Portfolio/">
-        {/* Git hub is not supporting BrowserRouter for pages hosted on gh-pages. */}
-{/* <BrowserRouter> */} 
-    <App />
- {/* </BrowserRouter> */}
-</HashRouter>
+    <StrictMode>
+        <BrowserRouter basename='/Maria-Portfolio/'>
+            <App />
+        </BrowserRouter>
+    </StrictMode>
 )
