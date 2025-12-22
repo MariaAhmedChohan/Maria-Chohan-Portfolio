@@ -19,27 +19,27 @@ const [showmenu, setshowmenu] = useState(false)
        </div>
        <div className='hidden md:flex space-x-10 mx-1'>
 
-        <a href="#home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+        <a href="home" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
           <span>Home</span>
           <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full'></span>
         </a>
 
-          <a href="#about" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+          <a href="about" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
           <span>About</span>
           <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full'></span>
         </a>
 
-          <a href="#skills" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+          <a href="skills" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
           <span>Skills</span>
           <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full'></span>
         </a>
 
-          <a href="#projects" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+          <a href="projects" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
           <span>Projects</span>
           <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full'></span>
         </a>
 
-          <a href="#contact" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
+          <a href="contact" className='relative text-2xl font-semibold text-white transition duration-300 hover:text-amber-500 group'>
           <span>Contact</span>
           <span className='absolute left-0 -bottom-1 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full'></span>
         </a>
